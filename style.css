@@ -1,0 +1,158 @@
+body{
+    background-color:rgb(2, 2, 2) ;
+}
+#box_container{
+    height: 150px;
+    width: 150px;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    padding: 1px;
+    margin: 950px;
+    margin-top: 150px;
+    top: 100px;
+    position: absolute;   
+}
+
+.boxes{
+    height: 50px;
+    width: 50px; 
+    font-size: 0.1px;
+    border: 3px solid black ;
+    border-radius:8px ;
+}
+
+
+#tab_grid{
+    position: absolute;
+    top: 120px;
+    height: 420px;
+    width: 420px;
+    border-radius:10px ;
+    display: grid;
+    grid-template-columns:auto auto auto auto auto;
+    padding: 1px;
+    margin: 450px;
+    margin-top: 0px;
+    background-color:grey;
+    border: 10px solid #b6bdc0 ;
+    
+}
+
+.box{
+    height: 75px;
+    width: 75px; 
+    font-size: 0.1px;
+    border: 3px solid white ;
+    border-radius:8px ;
+}
+#a7{  
+    border:4px solid black ;
+}
+#a8{  
+    border: 4px solid black ;
+
+}#a9{  
+    border: 4px solid black ;
+
+}#a12{  
+    border:4px solid black ;
+
+}#a13{  
+    border: 4px solid black ;
+
+}#a14{  
+    border:4px solid black ;
+
+}#a17{  
+    border: 4px solid black ;
+
+}#a18{  
+    border: 4px solid black ;
+
+}#a19{  
+    border: 4px solid black ;
+
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    padding-top: 0.2rem;
+    color: #fff;
+    background: red;
+    border: none;
+    border-radius: 4px;
+    font-size: 2rem;
+    outline: none;
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    margin-top:20px ;
+}
+#submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    padding-top: 0.2rem;
+    color: #fff;
+    background: red;
+    border: none;
+    border-radius: 4px;
+    font-size: 2rem;
+    outline: none;
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    margin-top: 10px ;
+}
+#submit:hover {
+    background:transparent ;
+    border: 2px solid red;
+    transition:200ms;
+    transform:scale(1.1) ;
+    color: #fff;
+
+}
+
+
+#container:hover {
+    background:transparent ;
+    border: 2px solid red;
+    transition:200ms;
+    transform:scale(1.1) ;
+    color: #fff;
+
+}
+#moves{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    padding-top: 0.5rem;
+    color: #fff;
+    border: 2px solid red;
+    border-radius: 4px;
+    font-size: 2rem;
+    width: 200px;
+    height: 60px;
+    margin: 150px;
+}
+#clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+    color: #fff;
+    border: 2px solid red;
+    border-radius: 4px;
+    font-size: 3rem;
+    width: 250px;
+    height: 60px;
+    margin: 120px;
+    margin-bottom: 60px;
+}

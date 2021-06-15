@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB DEV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="container" onclick="start_game();">RESTART</div>
+    <h1 id="moves">Moves:<span id="myText"></span></h1>
+    <h2 id="clock">00:00:00</h2>
+    <div id="box_container"> 
+        <div class="boxes"id="b1"style="background-color: #fcba03 ;">1</div>
+        <div class="boxes"id="b2"style="background-color: #fc0320 ;">2</div>
+        <div class="boxes"id="b3"style="background-color: turquoise;">3</div>
+        <div class="boxes"id="b4"style="background-color: #6532a8 ;">4</div>
+        <div class="boxes"id="b5"style="background-color: #73a832 ;">5</div>
+        <div class="boxes"id="b6"style="background-color: #a8328d ;">6</div>
+        <div class="boxes"id="b7"style="background-color: #fcba03 ;">7</div>
+        <div class="boxes"id="b8"style="background-color: #fc0320 ;">8</div>
+        <div class="boxes"id="b9"style="background-color: turquoise ;">9</div>
+  </div>
+    
+    <div id="tab_grid">
+    <div class="box"id="a1"onclick="switching('a1');"style="background-color: #fcba03 ;">1</div>
+    <div class="box"id="a2"onclick="switching('a2');"style="background-color: #fc0320 ;">2</div>
+    <div class="box"id="a3"onclick="switching('a3');"style="background-color: turquoise ;">3</div>
+    <div class="box"id="a4"onclick="switching('a4');"style="background-color: #6532a8 ;">4</div>
+    <div class="box"id="a5"onclick="switching('a5');"style="background-color: #73a832 ;">5</div>
+    <div class="box"id="a6"onclick="switching('a6');"style="background-color: #a8328d ;">6</div>
+    <div class="box"id="a7"onclick="switching('a7');"style="background-color: #fcba03 ;">7</div>
+    <div class="box"id="a8"onclick="switching('a8');"style="background-color: #fc0320;">8</div>
+    <div class="box"id="a9"onclick="switching('a9');"style="background-color: turquoise ;">9</div>
+    <div class="box"id="a10"onclick="switching('a10');"style="background-color: #6532a8;">10</div>
+    <div class="box"id="a11"onclick="switching('a11');"style="background-color:#73a832 ;">11</div>
+    <div class="box"id="a12"onclick="switching('a12');"style="background-color:#a8328d ;">12</div>
+    <div class="box"id="a13"onclick="switching('a13');"style="background-color:#fcba03 ;">13</div>
+    <div class="box"id="a14"onclick="switching('a14');"style="background-color:#fc0320 ;">14</div>
+    <div class="box"id="a15"onclick="switching('a15');"style="background-color: turquoise ;">15</div>
+    <div class="box"id="a16"onclick="switching('a16');"style="background-color:#6532a8  ;">16</div>
+    <div class="box"id="a17"onclick="switching('a17');"style="background-color:#73a832 ;">17</div>
+    <div class="box"id="a18"onclick="switching('a18');"style="background-color:#a8328d ;">18</div>
+    <div class="box"id="a19"onclick="switching('a19');"style="background-color: #fcba03 ;">19</div>
+    <div class="box"id="a20"onclick="switching('a20');"style="background-color: #fc0320 ;">20</div>
+    <div class="box"id="a21"onclick="switching('a21');"style="background-color: turquoise;">21</div>
+    <div class="box"id="a22"onclick="switching('a22');"style="background-color: #6532a8;">22</div>
+    <div class="box"id="a23"onclick="switching('a23');"style="background-color:  #73a832;">23</div>
+    <div class="box"id="a24"onclick="switching('a24');"style="background-color: #a8328d ;">24</div>
+    <div class="box"id="a25"onclick="switching('a25');" style="background-color:black ;">25</div>
+    
+</div>
+    <div id="submit" onclick="WON();">SUBMIT</div>
+    <script type="text/javascript" src="gamejs.js"></script>
+</body>
+</html>
