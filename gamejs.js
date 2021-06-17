@@ -5,10 +5,14 @@ let timemin=0;
 let timehrs=0;
 let displaysec=0;
 let displaymin=0;
-let displayhrs=0
+let displayhrs=0;
+let firstTime = 1;
 
 function start_game(){
     number_mvs=0;
+    timesec=0;
+    timemin=0;
+    timehrs=0;
     empty_box_position='a25';
     var tab_position= new Array();
     var color_array = new Array("#fcba03", "#fc0320","turquoise","#6532a8","#73a832","#a8328d","#fcba03", "#fc0320","turquoise","#6532a8","#73a832","#a8328d","#fcba03", "#fc0320","turquoise","#6532a8","#73a832","#a8328d","#fcba03", "#fc0320","turquoise","#6532a8","#73a832","#a8328d","#fcba03")
@@ -136,6 +140,7 @@ function start_game(){
     document.getElementById('b9').textContent=box_position[8];
     document.getElementById('b9').style.backgroundColor=color_array_source[box_position[8]];
    
+
 }
 function switching(cell){
 
@@ -156,38 +161,43 @@ function switching(cell){
                         empty_box_position = cell;
                         number_mvs=number_mvs+1;
                         document.getElementById("myText").innerHTML = number_mvs;
-                        setInterval(() => {
-                            timesec++;
-                            document.getElementById("clock").innerHTML=displayhrs +":"+displaymin +":"+displaysec;  
-                            if(timesec/60==1){
-                                timesec=0;
-                                timemin++;
-                                if(timemin/60==1){
-                                    timemin=0;
-                                    timehrs++;
-                        
+
+                        if(firstTime == 1) {
+                            setInterval(() => {
+                                timesec++;
+                                document.getElementById("clock").innerHTML=displayhrs +":"+displaymin +":"+displaysec;  
+                                if(timesec/60==1){
+                                    timesec=0;
+                                    timemin++;
+                                    if(timemin/60==1){
+                                        timemin=0;
+                                        timehrs++;
+                            
+                                    }
                                 }
-                            }
-                            if(timesec<10){
-                                displaysec="0"+timesec.toString();
-                            }
-                            else{
-                                displaysec=timesec;
-                            }
-                             if(timemin<10){
-                                 displaymin="0"+timemin.toString();
-                             }
-                             else{
-                                 displaymin=timemin;
-                             }
-                             if(timehrs<10){
-                                 displayhrs="0"+timehrs.toString();
-                             }
-                             else{
-                                 displayhrs=timehrs;
-                             }
-                             
-                         }, 3000);
+                                if(timesec<10){
+                                    displaysec="0"+timesec.toString();
+                                }
+                                else{
+                                    displaysec=timesec;
+                                }
+                                 if(timemin<10){
+                                     displaymin="0"+timemin.toString();
+                                 }
+                                 else{
+                                     displaymin=timemin;
+                                 }
+                                 if(timehrs<10){
+                                     displayhrs="0"+timehrs.toString();
+                                 }
+                                 else{
+                                     displayhrs=timehrs;
+                                 }
+                                 
+                             }, 1000);
+                             firstTime=2;
+                        }
+                        
                     
 
     } else {
